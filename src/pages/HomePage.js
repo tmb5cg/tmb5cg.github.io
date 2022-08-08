@@ -4,17 +4,8 @@ import demo from '../images/demo.png';
 import before from '../images/before.png';
 import after from '../images/after.png';
 import {Link} from "react-router-dom";
-import ReactBeforeSliderComponent from 'react-before-after-slider-component';
-import 'react-before-after-slider-component/dist/build.css';
-
 
 const HomePage = () => {
-    const FIRST_IMAGE = {
-        imageUrl: after
-      };
-      const SECOND_IMAGE = {
-        imageUrl: before
-      };
     
     return (
     <div>
@@ -55,9 +46,6 @@ const HomePage = () => {
     <h2> Why should I use it? </h2>
     <p> It's free and no download required, unlike the only competitor. I made this to put on my resume! </p>
 
-    {/* <ReactBeforeSliderComponent
-    firstImage={FIRST_IMAGE}
-    secondImage={SECOND_IMAGE} /> */}
 
     </div>);
 };
