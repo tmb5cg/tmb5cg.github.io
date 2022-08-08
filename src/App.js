@@ -1,37 +1,32 @@
-import './App.scss';
-import 'boxicons/css/boxicons.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useEffect} from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from './contexts/theme'
+import Header from './components/Header/Header'
+import About from './components/About/About'
+import Projects from './components/Projects/Projects'
+import Skills from './components/Skills/Skills'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
+import './App.css'
 
-import AppLayout from './components/layout/AppLayout';
-import Blank from './pages/Blank';
-import Upload from './pages/Upload';
-import HomePage from './pages/HomePage';
-import About from './pages/About';
-import ReactGA from "react-ga4";
+const App = () => {
+  const [{ themeName }] = useContext(ThemeContext)
 
-const TRACKING_ID = "G-HYHT5Q88L7"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+  return (
+    <div id='top' className={`${themeName} app`}>
+      <Header />
 
-function App() {
+      <main>
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
 
-    useEffect(() => {
-        const path = window.location.pathname + window.location.search
-        ReactGA.send({hitType: 'pageview', page: path})
-      }, []);
-
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<AppLayout />}>
-                    <Route index element={<HomePage />} />
-                    <Route path='/upload' element={<Upload />} />
-                    <Route path='/about' element={<About />} />
-                    <Route path='/contact' element={<Blank />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-    );
+      <ScrollToTop />
+      <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App
