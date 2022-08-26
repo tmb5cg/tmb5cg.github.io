@@ -57,7 +57,7 @@ const App = () => {
 
         <Route path="autocropper" element={<Upload />} />
         <Route path="fifa-autobidder" element={<Autobidder />} />
-        <Route path="free-time-finder" element={<FreeTimeFinder />} />
+        <Route path="free-time-finder-v2" element={<FreeTimeFinder />} />
         
       </Routes>
 
