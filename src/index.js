@@ -6,9 +6,9 @@ import "./index.css";
 
 render(
   <ThemeProvider>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </ThemeProvider>,
   document.getElementById("root")
 );
