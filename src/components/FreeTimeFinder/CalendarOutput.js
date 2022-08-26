@@ -582,9 +582,9 @@ const CalendarOutput = (props) => {
         for (let x = 0; x < awesomeArray.length; x++){
           var times = awesomeArray[x];
           var curstart = times[0];
-          curstart = new Date(curstart.setHours(curstart.getHours() + 1))
+          curstart = new Date(curstart.setHours(curstart.getHours() + 0))
           var curend = times[1];
-          curend = new Date(curend.setHours(curend.getHours() + 1))
+          curend = new Date(curend.setHours(curend.getHours() + 0))
 
           var comb = [curstart, curend]
           finalArr.push(comb)
