@@ -80,7 +80,7 @@ const projects = [
       'Finds free meeting times by date and shared calendars via Google OAuth + GCal API',
     stack: ['React', 'Google OAuth', 'Google Calendar API'],
     sourceCode: 'https://github.com',
-    livePreview: '/free-time-finder',
+    livePreview: '/free-time-finder-v2',
   },
   {
     name: 'InstaBot',
