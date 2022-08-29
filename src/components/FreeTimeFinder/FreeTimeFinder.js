@@ -125,7 +125,7 @@ const FreeTimeFinder = () => {
             endDate={endDate}
             selectsRange
             inline
-            />
+            /> 
 
             <br />
             <CalendarOutput selectedCalendars={selectedCalendars} startDate={startDate} endDate={endDate} outputReady={outputReady} setOutputReady={setOutputReady} setEndDate = {setEndDate}/>
