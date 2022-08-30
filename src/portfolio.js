@@ -77,7 +77,8 @@ const projects = [
     description:
       "Finds free meeting times by date and shared calendars via Google OAuth + GCal API",
     stack: ["React", "Google OAuth", "Google Calendar API"],
-    sourceCode: "https://github.com",
+    sourceCode:
+      "https://github.com/tmb5cg/tmb5cg.github.io/tree/main/src/components/FreeTimeFinder",
     livePreview: "/free-time-finder-v2",
   },
   {
@@ -85,8 +86,8 @@ const projects = [
     description:
       "Instagram bot that scrapes memes from r/programmerhumor and posts to @dankcsmemes daily",
     stack: ["Python"],
-    sourceCode: "https://github.com",
-    livePreview: "https://github.com",
+    sourceCode: "https://github.com/tmb5cg",
+    livePreview: "https://instagram.com/dankcsmemes",
   },
   {
     name: "Monkeypox Vaccine Appointment Finder",
