@@ -13,44 +13,14 @@ import Autobidder from "./components/Autobidder/Autobidder";
 import FreeTimeFinder from "./components/FreeTimeFinder/FreeTimeFinder";
 import "./App.css";
 
-// import { GoogleLogin } from 'react-google-login';
-// import { gapi } from 'gapi-script';
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
-
-  // const clientId = '501334517326-6umils6sm37ai65fgh1v2r83s9ggefkg.apps.googleusercontent.com';
-
-  // useEffect(() => {
-  //   const initClient = () => {
-  //         gapi.client.init({
-  //         clientId: clientId,
-  //         scope: ''
-  //       });
-  //     };
-  //     gapi.load('client:auth2', initClient);
-  // });
-
-  // const onSuccess = (res) => {
-  //   console.log('success:', res);
-  // };
-  // const onFailure = (err) => {
-  //     console.log('failed:', err);
-  // };
 
   return (
 
     <div id="top" className={`${themeName} app`}>
       <Header />
-
-      {/* <GoogleLogin
-          clientId={clientId}
-          buttonText="Sign in with Google"
-          onSuccess={onSuccess}
-          onFailure={onFailure}
-          cookiePolicy={'single_host_origin'}
-          isSignedIn={true}
-      /> */}
 
       <Routes>
         <Route path="/" element={ <HomePage />}  />
