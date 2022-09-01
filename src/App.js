@@ -12,23 +12,29 @@ import Upload from "./components/Upload/Upload";
 import Autobidder from "./components/Autobidder/Autobidder";
 import FreeTimeFinder from "./components/FreeTimeFinder/FreeTimeFinder";
 import "./App.css";
+import ReactGA from "react-ga4";
 
+const TRACKING_ID = "G-FW374BWK80"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext);
 
-  return (
+  useEffect(() => {
+    const path = window.location.pathname + window.location.search;
+    ReactGA.send({ hitType: "pageview", page: path });
+  }, []);
 
+  return (
     <div id="top" className={`${themeName} app`}>
       <Header />
 
       <Routes>
-        <Route path="/" element={ <HomePage />}  />
+        <Route path="/" element={<HomePage />} />
 
         <Route path="/autocropper" element={<Upload />} />
         <Route path="/fifa-autobidder" element={<Autobidder />} />
         <Route path="/free-time-finder-v2" element={<FreeTimeFinder />} />
-        
       </Routes>
 
       <ScrollToTop />
