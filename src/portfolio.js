@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Aspiring data engineer or React developer",
+  role: "Aspiring Software Engineer or Data Engineer",
   description: "Welcome to my personal portfolio.",
   resume:
     "https://drive.google.com/file/d/1ETNHNkyb-0MNqMBxjck7wP-HlAOYfwp7/view?usp=sharing",
@@ -101,7 +101,7 @@ const projects = [
     name: "ConEd API",
     description: "Logs energy usage by listening to ConEd user portal",
     stack: ["Python"],
-    sourceCode: "https://github.com",
+    sourceCode: "https://github.com/tmb5cg/home-assistant-addons/tree/main/oru",
     livePreview: "https://github.com",
   },
 ];
