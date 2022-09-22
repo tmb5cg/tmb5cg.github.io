@@ -8,7 +8,7 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
   role: "Aspiring Software Engineer or Data Engineer",
-  description: "Welcome to my personal portfolio.",
+  description: "UVA Computer Science grad",
   resume:
     "https://drive.google.com/file/d/1ETNHNkyb-0MNqMBxjck7wP-HlAOYfwp7/view?usp=sharing",
   social: {
