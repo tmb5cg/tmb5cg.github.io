@@ -10,7 +10,7 @@ const about = {
   role: "Aspiring Software Engineer or Data Engineer",
   description: "UVA Computer Science grad",
   resume:
-    "https://drive.google.com/file/d/1ETNHNkyb-0MNqMBxjck7wP-HlAOYfwp7/view?usp=sharing",
+    "https://drive.google.com/file/d/1gvWZWr0ZEJXO_XBYYsXjyO_nCxOqiVsw/view?usp=sharing",
   social: {
     linkedin: "https://linkedin.com/in/tucker-bendix/",
     github: "https://github.com/tmb5cg",
