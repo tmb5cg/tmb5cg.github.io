@@ -70,9 +70,6 @@ const FreeTimeFinder = () => {
         localStorage.clear();
 
         // Handle the results here (response.result has the parsed body).
-        console.log("Response", response);
-        console.log("YEEEET", response.result.items[0].id);
-
         var cals = response.result.items;
         setCalendars(cals);
       },
