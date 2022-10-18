@@ -20,19 +20,34 @@ const Autobidder = () => {
         <h1> {title} </h1>
         <h2 className="about__role">{subhead} </h2>
         <p className="about__desc">{description && description}</p>
+        <br></br>
         <a
           className="btn-upload"
           href="https://github.com/tmb5cg/Fifa22-Autobidder"
         >
-          Click here for repository
+          GitHub Repository
+        </a>
+        <a
+          className="btn-upload"
+          href="https://github.com/tmb5cg/Fifa22-Autobidder"
+        >
+          Licensing and pricing (pro)
+        </a>
+        <a
+          className="btn-upload"
+          href="https://discord.gg/wmssAnqC"
+        >
+          Discord Community (public)
         </a>
       </div>
+
+      <div className = "about left">Last updated: 10/18/22 13:14:22</div>
 
       <br />
       <br />
 
       <div className="about tester">
-        <h2>Tmb5cg's FIFA 22 Autobidder Instructions</h2>
+        <h2>Documentation</h2>
         <br />
         <p>
           A completed "cycle" takes around 20 minutes and consists of 4 steps:
@@ -70,16 +85,6 @@ const Autobidder = () => {
                 change your setup)
               </li>
               <li>Player data and cards are stored to player_list.txt </li>
-              <li>
-                <strong>NOTE: </strong> futbin_max_price was never implemented
-                and does not do anything (it was meant to ignore players during
-                parsing but I never got around to it, so manually include the
-                price cap in your futbin URL
-              </li>
-              <li>
-                <strong>NOTE: </strong> futbin_position was never implemented
-                and does not do anything
-              </li>
             </ul>
           </li>
 

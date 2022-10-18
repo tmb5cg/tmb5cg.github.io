@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Aspiring Software Engineer or Data Engineer",
+  role: "Software Engineer",
   description: "UVA Computer Science grad",
   resume:
     "https://drive.google.com/file/d/1gvWZWr0ZEJXO_XBYYsXjyO_nCxOqiVsw/view?usp=sharing",
@@ -33,7 +33,7 @@ const autobid = {
   // all the properties are optional - can be left empty or deleted
   title: "FIFA 22 Autobidder",
   description:
-    "The only open-source, free FIFA trading bot in existence. Available since 2020.",
+    "The only open-source FIFA trading bot and framework in existence. Available since 2020.",
   subhead: "",
   social: {
     linkedin: "https://linkedin.com/in/tucker-bendix/",
@@ -59,16 +59,16 @@ const projects = [
   {
     name: "Autocropper.io",
     description:
-      "The only web tool that will auto crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos.",
+      "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos. www.autocropper.io",
     stack: ["React", "Python", "OpenCV", "Heroku"],
     sourceCode: "https://github.com/tmb5cg",
     livePreview: "/autocropper",
   },
   {
-    name: "FIFA 22 Trading Bot",
+    name: "FIFA Autobidder",
     description:
-      "Selenium bot that autobids and autobuys players on FIFA 22 Ultimate Team's transfer market. User configurable settings, advanced logging and performance monitoring, robust error reporting. Open source, free.",
-    stack: ["Python", "Javascript"],
+      "Selenium bot that autobids and autobuys players on FIFA 22 Ultimate Team's transfer market. User configurable settings, advanced logging and performance monitoring, robust error reporting. Open source.",
+    stack: ["Python", "Javascript", "Google Sheets API"],
     sourceCode: "https://github.com/tmb5cg/Fifa22-Autobidder",
     livePreview: "/fifa-autobidder",
   },
@@ -84,7 +84,7 @@ const projects = [
   {
     name: "InstaBot",
     description:
-      "Instagram bot that scrapes memes from r/programmerhumor and posts to @dankcsmemes daily",
+      "Instagram bot that scrapes memes from r/programmerhumor and posts to @dankcsmemes ",
     stack: ["Python"],
     sourceCode: "https://github.com/tmb5cg",
     livePreview: "https://instagram.com/dankcsmemes",
