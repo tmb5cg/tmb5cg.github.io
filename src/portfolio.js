@@ -61,7 +61,7 @@ const projects = [
     description:
       "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos. www.autocropper.io",
     stack: ["React", "Python", "OpenCV", "Heroku"],
-    sourceCode: "https://github.com/tmb5cg",
+    sourceCode: "https://github.com/tmb5cg/autocropper.io",
     livePreview: "/autocropper",
   },
   {
@@ -69,7 +69,7 @@ const projects = [
     description:
       "Selenium bot that autobids and autobuys players on FIFA 22 Ultimate Team's transfer market. User configurable settings, advanced logging and performance monitoring, robust error reporting. Open source.",
     stack: ["Python", "Javascript", "Google Sheets API"],
-    sourceCode: "https://github.com/tmb5cg/Fifa22-Autobidder",
+    sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
     livePreview: "/fifa-autobidder",
   },
   {
