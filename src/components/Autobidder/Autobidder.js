@@ -27,21 +27,15 @@ const Autobidder = () => {
         >
           GitHub Repository
         </a>
-        <a
-          className="btn-upload"
-          href="https://github.com/tmb5cg/Fifa22-Autobidder"
-        >
+        <a className="btn-upload" href="copay-castle.0y@icloud.com">
           Licensing and pricing (pro)
         </a>
-        <a
-          className="btn-upload"
-          href="https://discord.gg/wmssAnqC"
-        >
+        <a className="btn-upload" href="https://discord.gg/wmssAnqC">
           Discord Community (public)
         </a>
       </div>
 
-      <div className = "about left">Last updated: 10/18/22 13:14:22</div>
+      <div className="about left">Last updated: 10/18/22 13:14:22</div>
 
       <br />
       <br />
