@@ -28,7 +28,7 @@ const Autobidder = () => {
           GitHub Repository
         </a>
         <a className="btn-upload" href="copay-castle.0y@icloud.com">
-          Licensing and pricing (pro)
+          Licensing and pricing contact (pro)
         </a>
         <a className="btn-upload" href="https://discord.gg/wmssAnqC">
           Discord Community (public)
