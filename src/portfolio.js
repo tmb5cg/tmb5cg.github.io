@@ -31,7 +31,7 @@ const autocropper = {
 
 const autobid = {
   // all the properties are optional - can be left empty or deleted
-  title: "FIFA 22 Autobidder",
+  title: "FIFA Autobidder",
   description:
     "The only open-source FIFA trading bot and framework in existence. Available since 2020.",
   subhead: "",
@@ -62,7 +62,7 @@ const projects = [
       "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos. www.autocropper.io",
     stack: ["React", "Python", "OpenCV", "Heroku"],
     sourceCode: "https://github.com/tmb5cg/autocropper.io",
-    livePreview: "/autocropper",
+    livePreview: "https://www.autocropper.io",
   },
   {
     name: "FIFA Autobidder",

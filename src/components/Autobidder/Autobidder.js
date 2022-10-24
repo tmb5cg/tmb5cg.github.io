@@ -27,8 +27,8 @@ const Autobidder = () => {
         >
           GitHub Repository
         </a>
-        <a className="btn-upload" href="copay-castle.0y@icloud.com">
-          Licensing and pricing contact (pro)
+        <a className="btn-upload" href="mailto: copay-castle.0y@icloud.com">
+          Licensing and pricing contact
         </a>
         <a className="btn-upload" href="https://discord.gg/wmssAnqC">
           Discord Community (public)
@@ -73,10 +73,9 @@ const Autobidder = () => {
             Parsing Futbin for player prices
             <ul className="entry">
               <li>
-                Bot searches using input Futbin URL on line 111 in autobidder.py
-                which can be updated while existing bot thread is closed (thread
-                is closed if GUI is grey, and not green - no need to re-login to
-                change your setup)
+                Bot searches using input Futbin URL on GUI which can be updated
+                while existing bot thread is closed (thread is closed if GUI is
+                grey, and not green - no need to re-login to change your setup)
               </li>
               <li>Player data and cards are stored to player_list.txt </li>
             </ul>
