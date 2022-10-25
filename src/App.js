@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Upload from "./components/Upload/Upload";
 import Autobidder from "./components/Autobidder/Autobidder";
 import FreeTimeFinder from "./components/FreeTimeFinder/FreeTimeFinder";
+import Instagram from "./components/Instagram/Instagram";
 import "./App.css";
 // import ReactGA from "react-ga4";
 
@@ -31,7 +32,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-
+        <Route path="/instagram" element={<Instagram />} />
         <Route path="/autocropper" element={<Upload />} />
         <Route path="/fifa-autobidder" element={<Autobidder />} />
         <Route path="/free-time-finder-v2" element={<FreeTimeFinder />} />
