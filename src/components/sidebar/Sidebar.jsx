@@ -46,12 +46,12 @@ const sidebarNavItems = [
     to: "/freetimefinder",
     section: "freetimefinder",
   },
-  // {
-  //   display: "Me",
-  //   icon: <i className="bx bx-star"></i>,
-  //   to: "/instagram",
-  //   section: "instagram",
-  // },
+  {
+    display: "Me",
+    icon: <i className="bx bx-star"></i>,
+    to: "/instagram",
+    section: "instagram",
+  },
 ];
 
 const Sidebar = () => {
