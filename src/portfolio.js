@@ -10,7 +10,7 @@ const about = {
   role: "Software Engineer",
   description: "UVA Computer Science grad",
   resume:
-    "https://drive.google.com/file/d/1gvWZWr0ZEJXO_XBYYsXjyO_nCxOqiVsw/view?usp=sharing",
+    "https://drive.google.com/file/d/1dOo5c8xfRUPXu1BlCYPOKlaKQgQbAtIm/view?usp=sharing",
   social: {
     linkedin: "https://linkedin.com/in/tucker-bendix/",
     github: "https://github.com/tmb5cg",
