@@ -31,7 +31,7 @@ const autocropper = {
 
 const autobid = {
   // all the properties are optional - can be left empty or deleted
-  title: "FIFA Autobidder",
+  title: "FIFAutobidder",
   description:
     "The only open-source FIFA trading bot and framework in existence. Available since 2020.",
   subhead: "",

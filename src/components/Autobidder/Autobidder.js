@@ -23,7 +23,7 @@ const Autobidder = () => {
         <br></br>
         <a
           className="btn-upload"
-          href="https://github.com/tmb5cg/Fifa22-Autobidder"
+          href="https://github.com/tmb5cg/Fifa-Autobidder"
         >
           GitHub Repository
         </a>
