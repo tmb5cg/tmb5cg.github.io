@@ -41,6 +41,7 @@ const App = () => {
           <Route path="/instagram" element={<Instagram />} />
           <Route path="/freetimefinder" element={<FreeTimeFinder />} />
           <Route path="/autobidder" element={<Autobidder />} />
+          <Route path="/fifa-autobidder" element={<Autobidder />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
 
