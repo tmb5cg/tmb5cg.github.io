@@ -30,7 +30,7 @@ const Uploader = () => {
   } else if (!processedImages) {
     return (
       <div>
-        <h2>File Uploader</h2>
+        {/* <h2>File Uploader</h2> */}
         <DragDropFile
           setProcessedImages={setProcessedImages}
           setImageProcessing={setImageProcessing}

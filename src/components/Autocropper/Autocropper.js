@@ -12,9 +12,9 @@ const Autocropper = () => {
   return (
     <>
       <main>
-        <Uploader />
         <div>
           <div className="maincontent">
+            {/* <h2>Autcropper</h2> */}
             <div className="maincontentitem">
               {" "}
               <img src={demo} alt="" className="demoimage" />
@@ -27,19 +27,19 @@ const Autocropper = () => {
               </h3>
 
               <ol className="gradient-list">
-                <li>Upload your scans to our portal.</li>
+                <li>Upload your scan here.</li>
                 <li>Python OpenCV will splice your images.</li>
-                <li>Download your cropped photos to begin sharing.</li>
+                <li>Download your cropped photos.</li>
               </ol>
 
               <a href="#upload">
                 {" "}
-                <button className="button-70">
-                  Get Started - Upload Scan Here
-                </button>{" "}
+                <button className="button-70">Try it below!</button>{" "}
               </a>
             </div>
           </div>
+          <br />
+          <Uploader />
 
           <br></br>
           <br></br>
@@ -56,6 +56,10 @@ const Autocropper = () => {
             It's free and no download required, unlike the only competitor. I
             made this to put on my resume!{" "}
           </p>
+
+          <br />
+
+          {/* <Uploader /> */}
         </div>
       </main>
     </>
