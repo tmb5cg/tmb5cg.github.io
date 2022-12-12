@@ -77,7 +77,8 @@ const GroceryLister = () => {
 
   return (
     <div>
-      <h3>Enter recipe URL(s) below to see its ingredients </h3>
+      <h3>Extract ingredients from any recipe URL</h3>
+      <h4>too much SEO content nowadays</h4>
       <form className="upload-container" onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"

@@ -70,7 +70,7 @@ const projects = [
       "Selenium bot that autobids and autobuys players on FIFA 22 Ultimate Team's transfer market. User configurable settings, advanced logging and performance monitoring, robust error reporting. Open source.",
     stack: ["Python", "Javascript", "Google Sheets API"],
     sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
-    livePreview: "/fifa-autobidder",
+    livePreview: "/autobidder",
   },
   {
     name: "FreeTimeFinder",
@@ -79,7 +79,7 @@ const projects = [
     stack: ["React", "Google OAuth", "Google Calendar API"],
     sourceCode:
       "https://github.com/tmb5cg/tmb5cg.github.io/tree/main/src/components/FreeTimeFinder",
-    livePreview: "/free-time-finder-v2",
+    livePreview: "/freetimefinder",
   },
   {
     name: "InstaBot",
