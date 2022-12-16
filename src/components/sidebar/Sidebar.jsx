@@ -30,7 +30,7 @@ const sidebarNavItems = [
     section: "groceries",
   },
   {
-    display: "FIFAutobidder",
+    display: "FIFA Autobidder",
     icon: <i className="bx bx-star"></i>,
     to: "/autobidder",
     section: "autobidder",
