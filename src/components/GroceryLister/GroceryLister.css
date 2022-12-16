@@ -1,0 +1,11 @@
+.submit-recipe-container {
+    height: 13rem;
+    width: 28rem;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    width: 55%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+  }

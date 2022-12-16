@@ -35,7 +35,7 @@ const Autobidder = () => {
         </a>
       </div>
 
-      <div className="about left">Last updated: 10/18/22 13:14:22</div>
+      <div className="about left">Last updated: 12/16/22 13:14:22</div>
 
       <br />
       <br />

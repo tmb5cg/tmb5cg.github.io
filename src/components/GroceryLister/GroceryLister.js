@@ -7,119 +7,81 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-
-function createData(id, name, ingredient, unit, qty) {
-  return { id, name, ingredient, qty, unit };
-}
-
-function isValidHttpUrl(string) {
-  let url;
-  try {
-    url = new URL(string);
-  } catch (_) {
-    return false;
-  }
-  return url.protocol === "http:" || url.protocol === "https:";
-}
+import IngredientList from "./IngredientList";
+import RecipeList from "./RecipeList";
+import SubmitRecipeForm from "./SubmitRecipeForm";
 
 const GroceryLister = () => {
-  const [url, setUrl] = useState("");
-  const [updated, setUpdated] = useState(url);
+  const [inputUrl, setInputUrl] = useState("");
+  const [recipes, setRecipes] = useState([]);
   const [ingredients, setIngredients] = useState([]);
+  // const inputRef = React.useRef(null);
 
-  const inputRef = React.useRef(null);
+  useEffect(() => {
+    getLocalIngredients();
+  }, []);
 
-  const handleTextboxChange = (event) => {
-    setUrl(event.target.value);
-  };
+  // if ingredients ever changes ie new ones, update local storage
+  useEffect(() => {
+    saveLocalIngredients();
+  }, [ingredients, recipes]);
 
-  const handleClick = () => {
-    setUpdated(url);
-    getIngredients(updated);
-  };
-
-  const getIngredients = function (e) {
-    if (isValidHttpUrl(url)) {
-      console.log("yes");
-      axios({
-        method: "POST",
-        url:
-          "https://scanned-photo-split.herokuapp.com/getingredients?url=" + url,
-        // url: "http://127.0.0.1:5000/getingredients?url=" + url,
-        headers: { "Content-Type": "multipart/form-data" },
-      })
-        .then(function (response) {
-          console.log(response.data);
-          // insert useeffect here
-          var newIngredients = [];
-          for (let i = 0; i < response.data.ingredients.length; i++) {
-            // var newIngredient = createData(Math.random() * 1000, response.data.name, response.data.ingredients[i])
-            var newIngredient = createData(
-              Math.random() * 1000,
-              response.data.ingredients[i],
-              response.data.detailed[i]["name"],
-              response.data.detailed[i]["qty"],
-              response.data.detailed[i]["unit"]
-            );
-            newIngredients.push(newIngredient);
-          }
-          setIngredients(ingredients.concat(newIngredients));
-        })
-        .catch(function (response) {
-          console.log("error");
-        });
+  const getLocalIngredients = () => {
+    if (localStorage.getItem("ingredients") === null) {
+      localStorage.setItem("ingredients", JSON.stringify([]));
     } else {
-      console.log("invalid");
+      let todoLocal = JSON.parse(localStorage.getItem("ingredients"));
+      setIngredients(todoLocal);
     }
+
+    if (localStorage.getItem("recipes") === null) {
+      localStorage.setItem("recipes", JSON.stringify([]));
+    } else {
+      let recipeLocal = JSON.parse(localStorage.getItem("recipes"));
+      setRecipes(recipeLocal);
+    }
+  };
+
+  const saveLocalIngredients = () => {
+    localStorage.setItem("ingredients", JSON.stringify(ingredients));
+    localStorage.setItem("recipes", JSON.stringify(recipes));
   };
 
   return (
     <div>
       <h3>Extract ingredients from any recipe URL</h3>
-      <h4>too much SEO content nowadays</h4>
-      <form className="upload-container" onSubmit={(e) => e.preventDefault()}>
-        <input
-          type="text"
-          ref={inputRef}
-          placeholder="Recipe URL"
-          onChange={handleTextboxChange}
-        />
-        <button className="button-70" onClick={handleClick}>
-          Add ingredients
-        </button>{" "}
-      </form>
+      <h4></h4>
 
       <div>
-        <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell>Clean Ingredient</TableCell>
-                <TableCell align="right">Quantity</TableCell>
-                <TableCell align="right"></TableCell>
-                <TableCell align="right">Original text from site</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {ingredients.map((row) => (
-                <TableRow
-                  key={row.id}
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell component="th" scope="row">
-                    {" "}
-                    {row.ingredient}{" "}
-                  </TableCell>
-                  <TableCell align="right">{row.unit}</TableCell>
-                  <TableCell align="right">{row.qty}</TableCell>
-                  <TableCell align="right">{row.name}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <SubmitRecipeForm
+          inputUrl={inputUrl}
+          setInputUrl={setInputUrl}
+          recipes={recipes}
+          setRecipes={setRecipes}
+          ingredients={ingredients}
+          setIngredients={setIngredients}
+        />
+      </div>
+
+      <h4 align="center"> Recipes </h4>
+
+      <br></br>
+
+      <div>
+        <RecipeList recipes={recipes} />
+      </div>
+
+      <br></br>
+      <br></br>
+      <h4 align="center"> Ingredients </h4>
+      <br></br>
+      <div>
+        <IngredientList
+          ingredients={ingredients}
+          setIngredients={setIngredients}
+        />
       </div>
     </div>
   );

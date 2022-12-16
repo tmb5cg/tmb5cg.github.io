@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./sidebar.scss";
+// import "./sidebar.scss";
+import "./sidebarTest.css";
 import "boxicons/css/boxicons.min.css";
 
 const sidebarNavItems = [
@@ -63,9 +64,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      const sidebarItem = sidebarRef.current.querySelector(
-        ".sidebar__menu__item"
-      );
+      const sidebarItem = sidebarRef.current.querySelector(".item");
       indicatorRef.current.style.height = `${sidebarItem.clientHeight}px`;
       setStepHeight(sidebarItem.clientHeight);
     }, 50);
@@ -82,11 +81,11 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <div className="sidebar__logo">Tucker</div>
-      <div ref={sidebarRef} className="sidebar__menu">
+      <div className="logo">Tucker</div>
+      <div ref={sidebarRef} className="menu">
         <div
           ref={indicatorRef}
-          className="sidebar__menu__indicator"
+          className="indicator"
           style={{
             transform: `translateX(-50%) translateY(${
               activeIndex * stepHeight
@@ -95,19 +94,44 @@ const Sidebar = () => {
         ></div>
         {sidebarNavItems.map((item, index) => (
           <Link to={item.to} key={index}>
-            <div
-              className={`sidebar__menu__item ${
-                activeIndex === index ? "active" : ""
-              }`}
-            >
-              <div className="sidebar__menu__item__icon">{item.icon}</div>
-              <div className="sidebar__menu__item__text">{item.display}</div>
+            <div className={`item ${activeIndex === index ? "selected" : ""}`}>
+              <div className="icon">{item.icon}</div>
+              <div className="text">{item.display}</div>
             </div>
           </Link>
         ))}
       </div>
     </div>
   );
+
+  // return (
+  //   <div className="sidebar">
+  //     <div className="sidebar__logo">Tucker</div>
+  //     <div ref={sidebarRef} className="sidebar__menu">
+  //       <div
+  //         ref={indicatorRef}
+  //         className="sidebar__menu__indicator"
+  //         style={{
+  //           transform: `translateX(-50%) translateY(${
+  //             activeIndex * stepHeight
+  //           }px)`,
+  //         }}
+  //       ></div>
+  //       {sidebarNavItems.map((item, index) => (
+  //         <Link to={item.to} key={index}>
+  //           <div
+  //             className={`sidebar__menu__item ${
+  //               activeIndex === index ? "active" : ""
+  //             }`}
+  //           >
+  //             <div className="sidebar__menu__item__icon">{item.icon}</div>
+  //             <div className="sidebar__menu__item__text">{item.display}</div>
+  //           </div>
+  //         </Link>
+  //       ))}
+  //     </div>
+  //   </div>
+  // );
 };
 
 export default Sidebar;
