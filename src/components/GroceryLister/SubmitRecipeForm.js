@@ -57,6 +57,13 @@ const SubmitRecipeForm = (props) => {
       console.log("invalid");
     }
   };
+
+  const clearIngredients = () => {
+    localStorage.setItem("ingredients", JSON.stringify([]));
+    localStorage.setItem("recipes", JSON.stringify([]));
+    props.setIngredients([]);
+    props.setRecipes([]);
+  };
   return (
     <div>
       <form
@@ -69,9 +76,12 @@ const SubmitRecipeForm = (props) => {
           placeholder="Recipe URL"
           onChange={handleTextboxChange}
         />
-        <button className="button-70" onClick={handleClick}>
+        <button className="button-submit" onClick={handleClick}>
           Fetch ingredients
-        </button>{" "}
+        </button>
+        <button className="button-clear" onClick={clearIngredients}>
+          Clear ingredients
+        </button>
       </form>
     </div>
   );
