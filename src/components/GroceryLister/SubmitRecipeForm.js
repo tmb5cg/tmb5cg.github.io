@@ -9,6 +9,14 @@ const SubmitRecipeForm = (props) => {
     props.setInputUrl(event.target.value);
   };
 
+  const handleInvalidInput = () => {
+    alert("Invalid URL!");
+  };
+
+  const handleParseError = () => {
+    alert("Unsupported recipe :(");
+  };
+
   const handleClick = () => {
     getIngredients(props.inputUrl);
   };
@@ -51,10 +59,10 @@ const SubmitRecipeForm = (props) => {
           props.setRecipes([...props.recipes, rec]);
         })
         .catch(function (response) {
-          console.log("error");
+          handleParseError();
         });
     } else {
-      console.log("invalid");
+      handleInvalidInput();
     }
   };
 

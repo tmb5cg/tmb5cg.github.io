@@ -61,8 +61,51 @@ const GroceryLister = () => {
 
   return (
     <div>
-      <h3>Extract ingredients from any recipe URL</h3>
-      <h4></h4>
+      {/* <div className="navbar-3 w-nav">
+        <div className="container-5 w-container">
+          <a href="/groceries" className="brand w-nav-brand w--current">
+            GroceryLister
+          </a>
+          <nav className="w-nav-menu">
+            <a
+              href="https://www.cooklist.co/#recipes"
+              className="nav-link-2 w-nav-link topmenu"
+            >
+              recipes
+            </a>
+            <a
+              href="https://www.cooklist.co/#meal-planner"
+              className="nav-link-2 w-nav-link topmenu"
+            >
+              MEAL&nbsp;PLANner
+            </a>
+            <a
+              href="https://www.cooklist.co/#pantry-inventory"
+              className="nav-link-4 w-nav-link topmenu"
+            >
+              pantry
+            </a>
+            <a
+              href="https://www.cooklist.co/#shopping-list"
+              className="nav-link-3 w-nav-link topmenu"
+            >
+              shopping
+            </a>
+            <a
+              href="https://cooklist.page.link/download"
+              className="new-bt-top new-main-bt-top w-button"
+            >
+              GET THE APP
+            </a>
+          </nav>
+        </div>
+      </div> */}
+      <h3 className="grocery-title">GroceryLister</h3>
+      <h4>
+        Easily create a shareable shopping list from your recipes with the push
+        of a button. This meal-planning tool allows you to transform your
+        recipes into shopping lists.
+      </h4>
 
       <div>
         <SubmitRecipeForm

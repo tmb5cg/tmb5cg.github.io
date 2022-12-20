@@ -73,3 +73,133 @@
     transition: all .2s ease-in-out;
     transform: scale(1.07);
   }
+
+  .grocery-title {
+    font-family: Lato,sans-serif;
+    font-size: 44px;
+    color: #333;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+
+  .container-5 {
+    max-width: 1200px;
+    }
+
+  .w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    }
+
+  .w-container:after, .w-container:before {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+    }
+
+    .w-nav-brand {
+      position: relative;
+      float: left;
+      text-decoration: none;
+      color: #333;
+      }
+  .navbar-3 {
+    display: block;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: hsla(0,0%,86.7%,0);
+  }
+
+  .w-nav-menu {
+    position: relative;
+    float: right;
+    }
+
+    .new-bt-top.new-main-bt-top {
+      width: 192px;
+      height: 48px;
+      margin-top: 5px;
+      margin-left: 20px;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+      border-radius: 25px;
+      background-image: linear-gradient(135deg,#1ff2a2,#00cdb5);
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      }
+      .w-nav-link {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        color: #222;
+        padding: 20px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .nav-link-4 {
+          font-family: Lato,sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          }
+          .nav-link-2 {
+            padding-bottom: 10px;
+            font-family: Lato,sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            }
+            .nav-link-3 {
+              font-family: Lato,sans-serif;
+              font-weight: 700;
+              text-transform: uppercase;
+              }
+  .topmenu {
+    max-width: 1200px;
+  }
+
+      .new-bt-top {
+        background-color: #fff;
+        font-family: Lato,sans-serif;
+        color: #333;
+        font-weight: 700;
+        text-transform: uppercase;
+        }
+        .w-button {
+          display: inline-block;
+          padding: 9px 15px;
+          background-color: #3898ec;
+          color: #fff;
+          border: 0;
+          line-height: inherit;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 0;
+          }
+
+  .brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333;
+    }
+
+  /* logo  */
+
+  /* Set the font family and size for the logo */
+ 
