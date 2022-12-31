@@ -27,19 +27,21 @@ const Autocropper = () => {
               </h3>
 
               <ol className="gradient-list">
-                <li>Upload your scan here.</li>
+                <li>Upload up to 15 scans.</li>
                 <li>Python OpenCV will splice your images.</li>
                 <li>Download your cropped photos.</li>
               </ol>
 
-              <a href="#upload">
+              <a href="https://www.autocropper.io">
                 {" "}
-                <button className="button-70">Try it below!</button>{" "}
+                <button className="button-70">
+                  Go to Autocropper website
+                </button>{" "}
               </a>
             </div>
           </div>
           <br />
-          <Uploader />
+          {/* <Uploader />
 
           <br></br>
           <br></br>
@@ -57,7 +59,7 @@ const Autocropper = () => {
             made this to put on my resume!{" "}
           </p>
 
-          <br />
+          <br /> */}
 
           {/* <Uploader /> */}
         </div>
