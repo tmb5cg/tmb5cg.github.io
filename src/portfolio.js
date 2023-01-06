@@ -110,11 +110,13 @@ const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
   "Python",
-  "PostgreSQL, SQL",
-  "HTML",
-  "CSS",
   "JavaScript",
   "React",
+  "NextJS",
+  "PostgreSQL",
+  "SQL",
+  "HTML",
+  "CSS",
   "Git",
   "CI/CD",
   "Visual Studio Code",
