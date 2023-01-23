@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { about } from "../../portfolio";
-import { ftf } from "../../portfolio";
 import "./FreeTimeFinder.css";
 
 import { GoogleLogin, GoogleLogout } from "react-google-login";
@@ -19,7 +18,11 @@ import "react-datepicker/dist/react-datepicker.css";
 import format from "date-fns/format";
 
 const FreeTimeFinder = () => {
-  const { title, description, subhead, socidal } = ftf;
+  // const { title, description, subhead, socidal } = ftf;
+  const title = "Free Time Finder";
+  const description =
+    "This tool automatically finds and lists free times via Google Calendar API.";
+  const subhead = "";
 
   const [profile, setProfile] = useState(null);
 

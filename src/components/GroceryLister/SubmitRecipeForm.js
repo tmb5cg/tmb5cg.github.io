@@ -80,6 +80,7 @@ const SubmitRecipeForm = (props) => {
       >
         <input
           type="text"
+          style={{ boxShadow: "0px 0px 3px 2px #0077c9" }}
           ref={inputRef}
           placeholder="Recipe URL"
           onChange={handleTextboxChange}
