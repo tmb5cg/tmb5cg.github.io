@@ -12,6 +12,7 @@ import Upload from "./components/Upload/Upload";
 import Autobidder from "./components/Autobidder/Autobidder";
 import FreeTimeFinder from "./components/FreeTimeFinder/FreeTimeFinder";
 import GroceryLister from "./components/GroceryLister/GroceryLister";
+import Autocropper from "./components/Autocropper/Autocropper";
 import "./App.css";
 import ReactGA from "react-ga4";
 
@@ -34,7 +35,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         {/* <Route index element={<HomePage />} /> */}
         {/* <Route path="/projects" element={<Projects />} /> */}
-        {/* <Route path="/autocropper" element={<Autocropper />} /> */}
+        <Route path="/autocropper" element={<Autocropper />} />
 
         <Route path="/groceries" element={<GroceryLister />} />
 
