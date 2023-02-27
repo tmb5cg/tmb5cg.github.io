@@ -7,8 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Full Stack Software Engineer",
-  description: "UVA Computer Science grad",
+  role: "Full Stack Engineer",
+  description:
+    "UVA Computer Science, ex management consultant. Strong React, Python, JavaScript and SQL skills. My strengths lean towards backend but I want to work on user-facing projects.",
   resume:
     "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
