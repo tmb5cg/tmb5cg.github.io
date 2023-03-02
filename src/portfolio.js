@@ -7,9 +7,8 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Full Stack Engineer",
-  description:
-    "UVA Computer Science, ex management consultant. Strong React, Python, JavaScript and SQL skills. My strengths lean towards backend but I want to work on user-facing projects.",
+  role: "Software Engineer",
+  description: "UVA Computer Science, ex management consultant / Data Analyst",
   resume:
     "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
@@ -46,7 +45,7 @@ const projects = [
   {
     name: "Autocropper.io",
     description:
-      "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos. www.autocropper.io",
+      "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos.",
     stack: [
       "React",
       "NextJS",
@@ -88,7 +87,7 @@ const projects = [
   {
     name: "BendixLaw.com",
     description: "Personal injury lawyer website.",
-    stack: ["React", "HTML", "CSS"],
+    stack: ["React", "Google Analytics", "GA5", "HTML", "CSS"],
     sourceCode: "https://github.com/tmb5cg",
     livePreview: "https://bendixlaw.com",
   },

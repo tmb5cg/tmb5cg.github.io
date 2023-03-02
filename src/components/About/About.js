@@ -29,12 +29,10 @@ const About = () => {
         {social && (
           <>
             {social.github && (
-              <a
-                href={social.github}
-                aria-label="github"
-                className="link link--icon"
-              >
-                <GitHubIcon />
+              <a href={social.github}>
+                <span type="button" className="btn btn--outline">
+                  GitHub
+                </span>
               </a>
             )}
 
