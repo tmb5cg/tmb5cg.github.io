@@ -7,8 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Software Engineer",
-  description: "UVA Computer Science, ex management consultant / Data Analyst",
+  role: "Full Stack Engineer / Cloud Engineer",
+  description:
+    "Cloud automation enthusiast, currently working in health tech. Often building React websites and Electron native apps in my free time.",
   resume:
     "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
@@ -109,16 +110,14 @@ const skills = [
   "Python",
   "React",
   "NextJS",
+  "AWS (EC2/S3/Lambda/CloudWatch/etc)",
   "JavaScript",
-  "PostgreSQL",
-  "SQL",
   "Node.js",
-  "AWS Amplify/Lambda/S3",
   "REST/GraphQL APIs",
-  "React Bootstrap",
   "HTML",
   "CSS",
   "Git",
+  "SQL",
   "Docker",
   "CI/CD",
   "Visual Studio Code",
