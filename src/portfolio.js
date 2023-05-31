@@ -7,9 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Full Stack Engineer / Cloud Engineer",
+  role: "Full Stack / Cloud Engineer",
   description:
-    "Cloud automation enthusiast, currently working in health tech. Often building React websites and Electron native apps in my free time.",
+    "Cloud automation enthusiast, currently working in healthcare tech. Building random cool stuff in my free time",
   resume:
     "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
@@ -63,9 +63,16 @@ const projects = [
     name: "FIFA Autobidder",
     description:
       "Python trading bot that farms in game currency on FIFA 22 Ultimate Team's transfer market. User friendly GUI, configurable settings, advanced logging and performance monitoring, robust error reporting. Open source.",
-    stack: ["Python", "Javascript", "Google Sheets API"],
+    stack: [
+      "Python",
+      "Javascript",
+      "React/NextJS/Electron",
+      "AWS Amplify",
+      "GraphQL",
+      "REST APIs",
+    ],
     sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
-    livePreview: "/autobidder",
+    livePreview: "https://www.futbidder.io/",
   },
   {
     name: "Grocery Lister",
