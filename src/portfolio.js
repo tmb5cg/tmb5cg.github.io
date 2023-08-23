@@ -7,9 +7,9 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
-  role: "Full Stack / Cloud Engineer",
+  role: "Software Engineer",
   description:
-    "Cloud automation enthusiast, currently working in healthcare tech. Building random cool stuff in my free time",
+    "Currently working in healthcare tech. Building cool projects in my free time",
   resume:
     "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
@@ -32,7 +32,7 @@ const autocropper = {
 
 const autobid = {
   // all the properties are optional - can be left empty or deleted
-  title: "FIFA Autobidder",
+  title: "FUTBidder",
   description:
     "The only open-source FIFA trading bot and framework in existence. Available since 2020.",
   subhead: "",
@@ -44,7 +44,7 @@ const autobid = {
 
 const projects = [
   {
-    name: "Autocropper.io",
+    name: "AutoCropper",
     description:
       "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos.",
     stack: [
@@ -60,9 +60,9 @@ const projects = [
     livePreview: "https://www.autocropper.io",
   },
   {
-    name: "FIFA Autobidder",
+    name: "FUTBidder",
     description:
-      "Python trading bot that farms in game currency on FIFA 22 Ultimate Team's transfer market. User friendly GUI, configurable settings, advanced logging and performance monitoring, robust error reporting. Open source.",
+      "Advanced autobidder trading bot. Windows and Mac Compatible. Automatically buys and sells players on the FUT (FIFA Ultimate Team) Transfer Market web application",
     stack: [
       "Python",
       "Javascript",
@@ -74,27 +74,27 @@ const projects = [
     sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
     livePreview: "https://www.futbidder.io/",
   },
-  {
-    name: "Grocery Lister",
-    description:
-      "Simple website that lets you enter multiple recipe URLs and fetches ingredients into an aggregated grocery list. Built in React and Python, uses pre-trained natural language processing model to interpret and structure ingredients",
-    stack: ["React", "Python", "Javascript", "Python"],
-    sourceCode:
-      "https://github.com/tmb5cg/tmb5cg.github.io/tree/main/src/components/GroceryLister",
-    livePreview: "/groceries",
-  },
-  {
-    name: "FreeTimeFinder",
-    description:
-      "Finds free meeting times by date and shared calendars via Google OAuth + GCal API",
-    stack: ["React", "Google OAuth", "Google Calendar API"],
-    sourceCode:
-      "https://github.com/tmb5cg/tmb5cg.github.io/tree/main/src/components/FreeTimeFinder",
-    livePreview: "/freetimefinder",
-  },
+  // {
+  //   name: "Grocery Lister",
+  //   description:
+  //     "Simple website that lets you enter multiple recipe URLs and fetches ingredients into an aggregated grocery list. Built in React and Python, uses pre-trained natural language processing model to interpret and structure ingredients",
+  //   stack: ["React", "Python", "Javascript", "Python"],
+  //   sourceCode:
+  //     "https://github.com/tmb5cg/tmb5cg.github.io/tree/main/src/components/GroceryLister",
+  //   livePreview: "/groceries",
+  // },
+  // {
+  //   name: "FreeTimeFinder",
+  //   description:
+  //     "Finds free meeting times by date and shared calendars via Google OAuth + GCal API",
+  //   stack: ["React", "Google OAuth", "Google Calendar API"],
+  //   sourceCode:
+  //     "https://github.com/tmb5cg/tmb5cg.github.io/tree/main/src/components/FreeTimeFinder",
+  //   livePreview: "/freetimefinder",
+  // },
   {
     name: "BendixLaw.com",
-    description: "Personal injury lawyer website.",
+    description: "Personal injury lawyer website for my dad",
     stack: ["React", "Google Analytics", "GA5", "HTML", "CSS"],
     sourceCode: "https://github.com/tmb5cg",
     livePreview: "https://bendixlaw.com",

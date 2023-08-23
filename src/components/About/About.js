@@ -10,7 +10,7 @@ const About = () => {
     <div className="about center">
       {name && (
         <h1>
-          Hi, I am <span className="about__name">{name}.</span>
+          I am <span className="about__name">{name}</span>
         </h1>
       )}
 
@@ -19,12 +19,26 @@ const About = () => {
 
       <div className="about__contact center">
         {resume && (
+          <span
+            onClick={() =>
+              alert(
+                "Resume {} outdated. I encourage you to contact me via email at copay-castle.0y@icloud.com (this forwards to my actual email)"
+              )
+            }
+            className="btn btn--outline"
+            style={{ cursor: "pointer" }}
+          >
+            Resume
+          </span>
+        )}
+
+        {/* {resume && (
           <a href={resume}>
             <span type="button" className="btn btn--outline">
               Resume
             </span>
           </a>
-        )}
+        )} */}
 
         {social && (
           <>
