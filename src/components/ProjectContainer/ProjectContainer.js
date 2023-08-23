@@ -6,7 +6,9 @@ import "./ProjectContainer.css";
 const ProjectContainer = ({ project }) => (
   <div className="project">
     <h3>
-      <a href={project.livePreview}>{project.name}</a>
+      <a href={project.livePreview} target="_blank" rel="noopener noreferrer">
+        {project.name}
+      </a>
     </h3>
 
     <p className="project__description">{project.description}</p>

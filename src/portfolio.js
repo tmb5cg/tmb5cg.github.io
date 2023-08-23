@@ -56,7 +56,7 @@ const projects = [
       "Auth",
       "OpenCV",
     ],
-    sourceCode: "https://github.com/tmb5cg/autocropper.io",
+    sourceCode: "https://www.autocropper.io",
     livePreview: "https://www.autocropper.io",
   },
   {
@@ -73,6 +73,14 @@ const projects = [
     ],
     sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
     livePreview: "https://www.futbidder.io/",
+  },
+  {
+    name: "Rep Your Railroad",
+    description:
+      "Metro-North train line themed sweatshirts, t-shirts, merchandise and more. Entirely custom NextJS Commerce + headless Shopify (top ~5% of e-comm sites)",
+    stack: ["React", "NextJS", "Shopify", "Javascript", "Vercel"],
+    sourceCode: "https://www.repyourrailroad.com/",
+    livePreview: "https://www.repyourrailroad.com/",
   },
   // {
   //   name: "Grocery Lister",
