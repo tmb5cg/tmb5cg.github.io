@@ -20,7 +20,7 @@ const TRACKING_ID = "G-FW374BWK80"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
-  const [{ themeName }] = useContext(ThemeContext);
+  // const [{ themeName }] = useContext(ThemeContext);
 
   useEffect(() => {
     const path = window.location.pathname + window.location.search;
@@ -28,8 +28,8 @@ const App = () => {
   }, []);
 
   return (
-    <div id="top" className={`${themeName} app`}>
-      <Header />
+    <div id="top" className={`app`}>
+      {/* <Header /> */}
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -50,8 +50,8 @@ const App = () => {
         <Route path="/free-time-finder-v2" element={<FreeTimeFinder />} /> */}
       </Routes>
 
-      <ScrollToTop />
-      <Footer />
+      {/* <ScrollToTop /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

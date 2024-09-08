@@ -8,10 +8,9 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
   role: "Software Engineer",
-  description:
-    "Currently working in healthcare tech. Building cool projects in my free time",
-  resume:
-    "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
+  // description: "I work in healthcare tech, and run AutoCropper on the side.",
+  // resume:
+  //   "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
     linkedin: "https://linkedin.com/in/tucker-bendix/",
     github: "https://github.com/tmb5cg",
@@ -44,44 +43,44 @@ const autobid = {
 
 const projects = [
   {
-    name: "AutoCropper",
-    description:
-      "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos.",
-    stack: [
-      "React",
-      "NextJS",
-      "Python",
-      "AWS Amplify",
-      "AWS Lambda",
-      "Auth",
-      "OpenCV",
-    ],
-    sourceCode: "https://www.autocropper.io",
+    name: "AutoCropper | Batch Scan Splitting Tool",
+    // description:
+    //   "Automatically crop scanned photos in one pass - multiple photos in a single scan. The best way to scan a lot of photos.",
+    // stack: [
+    //   "React",
+    //   "NextJS",
+    //   "Python",
+    //   "AWS Amplify",
+    //   "AWS Lambda",
+    //   "Auth",
+    //   "OpenCV",
+    // ],
+    // sourceCode: "https://www.autocropper.io",
     livePreview: "https://www.autocropper.io",
   },
-  {
-    name: "FUTBidder",
-    description:
-      "Advanced autobidder trading bot. Windows and Mac Compatible. Automatically buys and sells players on the FUT (FIFA Ultimate Team) Transfer Market web application",
-    stack: [
-      "Python",
-      "Javascript",
-      "React/NextJS/Electron",
-      "AWS Amplify",
-      "GraphQL",
-      "REST APIs",
-    ],
-    sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
-    livePreview: "https://www.futbidder.io/",
-  },
-  {
-    name: "Rep Your Railroad",
-    description:
-      "Metro-North train line themed sweatshirts, t-shirts, merchandise and more. Entirely custom NextJS Commerce + headless Shopify (top ~5% of e-comm sites)",
-    stack: ["React", "NextJS", "Shopify", "Javascript", "Vercel"],
-    sourceCode: "https://www.repyourrailroad.com/",
-    livePreview: "https://www.repyourrailroad.com/",
-  },
+  // {
+  //   name: "FIFA Trading Bot",
+  //   // description:
+  //   //   "Advanced autobidder trading bot. Windows and Mac Compatible. Automatically buys and sells players on the FUT (FIFA Ultimate Team) Transfer Market web application",
+  //   // stack: [
+  //   //   "Python",
+  //   //   "Javascript",
+  //   //   "React/NextJS/Electron",
+  //   //   "AWS Amplify",
+  //   //   "GraphQL",
+  //   //   "REST APIs",
+  //   // ],
+  //   sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
+  //   // livePreview: "https://www.futbidder.io/",
+  // },
+  // {
+  //   name: "Rep Your Railroad",
+  //   description:
+  //     "Metro-North train line themed sweatshirts, t-shirts, merchandise and more. Entirely custom NextJS Commerce + headless Shopify (top ~5% of e-comm sites)",
+  //   stack: ["React", "NextJS", "Shopify", "Javascript", "Vercel"],
+  //   sourceCode: "https://www.repyourrailroad.com/",
+  //   livePreview: "https://www.repyourrailroad.com/",
+  // },
   // {
   //   name: "Grocery Lister",
   //   description:
@@ -101,41 +100,37 @@ const projects = [
   //   livePreview: "/freetimefinder",
   // },
   {
-    name: "BendixLaw.com",
-    description: "Personal injury lawyer website for my dad",
-    stack: ["React", "Google Analytics", "GA5", "HTML", "CSS"],
-    sourceCode: "https://github.com/tmb5cg",
+    name: "www.bendixlaw.com",
+    // description: "Personal injury lawyer website for my dad",
+    // stack: ["React", "Google Analytics", "GA5", "HTML", "CSS"],
+    // sourceCode: "https://github.com/tmb5cg",
     livePreview: "https://bendixlaw.com",
   },
 
-  {
-    name: "ConEd API",
-    description:
-      "Home Assistant add on that logs energy consumption by listening to ConEd user portal",
-    stack: ["Python", "Docker", "JavaScript"],
-    sourceCode: "https://github.com/tmb5cg/home-assistant-addons/tree/main/oru",
-    livePreview:
-      "https://github.com/tmb5cg/home-assistant-addons/tree/main/oru",
-  },
+  // {
+  //   name: "ConEd API",
+  //   description:
+  //     "Home Assistant add on that logs energy consumption by listening to ConEd user portal",
+  //   stack: ["Python", "Docker", "JavaScript"],
+  //   sourceCode: "https://github.com/tmb5cg/home-assistant-addons/tree/main/oru",
+  //   livePreview:
+  //     "https://github.com/tmb5cg/home-assistant-addons/tree/main/oru",
+  // },
 ];
 
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
   "Python",
-  "React",
-  "NextJS",
+  "React, NextJS",
+  // "NextJS",
   "AWS (EC2/S3/Lambda/CloudWatch/etc)",
   "JavaScript",
-  "Node.js",
-  "REST/GraphQL APIs",
-  "HTML",
-  "CSS",
+  // "Node.js",
+  "REST APIs",
+  "HTML/CSS",
   "Git",
   "SQL",
-  "Docker",
-  "CI/CD",
-  "Visual Studio Code",
 ];
 
 const contact = {

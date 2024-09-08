@@ -1,58 +1,32 @@
-* {
-  padding: 0;
+/* index.css */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #FFFFCC;
+  color: #000080;
+  line-height: 1.6;
   margin: 0;
-  border: 0;
-  outline: 0;
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  box-shadow: none;
-  box-sizing: border-box;
+  padding: 20px;
 }
 
-html {
-  scroll-behavior: smooth;
+h1, h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.2;
-  color: var(--clr-fg-alt);
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+
+a {
+  color: #0000FF;
+  text-decoration: underline;
 }
 
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.3rem;
+a:hover {
+  color: #FF0000;
 }
 
 ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 2.6rem;
-  }
+  list-style-type: disc;
+  margin-left: 20px;
 }

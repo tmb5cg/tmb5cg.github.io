@@ -1,12 +1,36 @@
-.skills__list {
-  max-width: 450px;
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.skills {
+  margin-top: 20px;
 }
 
-.skills__list-item {
-  margin: 0.5em;
+.skills__title {
+  font-size: 18px;
+  color: #000080;
+  margin-bottom: 10px;
+}
+
+.skills__container {
+  display: table;
+  width: 100%;
+}
+
+.skills__list {
+  display: table-cell;
+  width: 50%;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills__item {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .skills__container {
+    display: block;
+  }
+  
+  .skills__list {
+    display: block;
+    width: 100%;
+  }
 }
