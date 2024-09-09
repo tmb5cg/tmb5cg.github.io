@@ -65,7 +65,7 @@ function HomePage() {
         <About />
         <Skills />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
       </main>
     </>
   );

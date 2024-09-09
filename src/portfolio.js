@@ -8,7 +8,7 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
   role: "Software Engineer",
-  // description: "I work in healthcare tech, and run AutoCropper on the side.",
+  description: "I work in healthcare tech, and run cool projects on the side.",
   // resume:
   //   "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
@@ -58,21 +58,21 @@ const projects = [
     // sourceCode: "https://www.autocropper.io",
     livePreview: "https://www.autocropper.io",
   },
-  // {
-  //   name: "FIFA Trading Bot",
-  //   // description:
-  //   //   "Advanced autobidder trading bot. Windows and Mac Compatible. Automatically buys and sells players on the FUT (FIFA Ultimate Team) Transfer Market web application",
-  //   // stack: [
-  //   //   "Python",
-  //   //   "Javascript",
-  //   //   "React/NextJS/Electron",
-  //   //   "AWS Amplify",
-  //   //   "GraphQL",
-  //   //   "REST APIs",
-  //   // ],
-  //   sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
-  //   // livePreview: "https://www.futbidder.io/",
-  // },
+  {
+    name: "FIFA Trading Bot",
+    // description:
+    //   "Advanced autobidder trading bot. Windows and Mac Compatible. Automatically buys and sells players on the FUT (FIFA Ultimate Team) Transfer Market web application",
+    // stack: [
+    //   "Python",
+    //   "Javascript",
+    //   "React/NextJS/Electron",
+    //   "AWS Amplify",
+    //   "GraphQL",
+    //   "REST APIs",
+    // ],
+    // sourceCode: "https://github.com/tmb5cg/Fifa-Autobidder",
+    livePreview: "https://github.com/tmb5cg/Fifa-Autobidder",
+  },
   // {
   //   name: "Rep Your Railroad",
   //   description:

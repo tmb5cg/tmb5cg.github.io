@@ -6,7 +6,7 @@ import "./ProjectContainer.css";
 const ProjectContainer = ({ project }) => (
   <div className="project">
     <h3>
-      <a href={project.livePreview} target="_blank" rel="noopener noreferrer">
+      <a href={project.livePreview} target="_blank">
         {project.name}
       </a>
     </h3>
@@ -32,7 +32,7 @@ const ProjectContainer = ({ project }) => (
       </a>
     )}
 
-    {project.livePreview && (
+    {/* {project.livePreview && (
       <a
         href={project.livePreview}
         aria-label="live preview"
@@ -40,7 +40,7 @@ const ProjectContainer = ({ project }) => (
       >
         <LaunchIcon />
       </a>
-    )}
+    )} */}
   </div>
 );
 
