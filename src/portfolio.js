@@ -8,7 +8,7 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: "Tucker Bendix",
   role: "Software Engineer",
-  description: "I work in healthcare tech, and run cool projects on the side.",
+  // description: "Currently working in Healthcare Tech",
   // resume:
   //   "https://drive.google.com/file/d/1We3NbY5qpcpjZ2DOFCflb5BDh9WE905O/view?usp=sharing",
   social: {
